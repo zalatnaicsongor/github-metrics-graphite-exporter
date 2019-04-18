@@ -2,7 +2,9 @@
 
 # Github PR Metrics Graphite Exporter
 
-This exporter converts raw GitHub pull request data to time series. The exported data points represent the number of seconds elapsed between the creation of the pull request and the merging of the pull request.
+[![Grafana Example](./data/github-pr-metrics.png)](./data/github-pr-metrics.png)
+
+This exporter converts raw GitHub pull request data to time series. The exported data points represent the number of seconds (⏰ business hours only, Mon-Fri 09:00 - 17:00) elapsed between the creation of the pull request and the merging of the pull request.
 
 The timestamp is the creation time of the PR.
 
@@ -24,4 +26,9 @@ $ npm start
 # ...
 ```
 
-If you have docker installed, try `make run` to explore the metric, the target which spins up a Graphite stack and injects some [sample data](./data/example.db). The Graphite UI is being exposed on [localhost:80](http://localhost).
+If you have docker installed, try `make run` to explore the metric. The target spins up a Graphite stack and injects some [sample data](./data/example.db) which can be explored through the exposed Graphite UI on [localhost:80](http://localhost).
+
+## Todo
+
+- [x] Exclude non-business hours from calculation
+- [ ] Exclude public holidays from calculation
