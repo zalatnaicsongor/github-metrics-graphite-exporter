@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/matchilling/github-metrics-graphite-exporter.svg?branch=master)](https://travis-ci.org/matchilling/github-metrics-graphite-exporter)
+[![Build Status](https://travis-ci.org/zalatnaicsongor/github-metrics-graphite-exporter.svg?branch=master)](https://travis-ci.org/zalatnaicsongor/github-metrics-graphite-exporter)
 
 # Github PR Metrics Graphite Exporter
 
